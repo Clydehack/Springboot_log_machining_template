@@ -31,8 +31,7 @@ public class SortService {
 	 * 2.然后根据输入的value-list中元素个数觉得key输出次数
 	 * 3.用全局linenum代表key的位次(这句？)
 	 */
-	public static class Reduce 
-		extends Reduce<IntWritable, IntWritable, IntWritable, IntWritable> {
+	public static class Reduce extends Reducer<IntWritable, IntWritable, IntWritable, IntWritable> {
 		
 		private static IntWritable linenum = new IntWritable(1);
 		
